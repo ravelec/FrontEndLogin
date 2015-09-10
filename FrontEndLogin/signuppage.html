@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body ng-app="app" animation="slide-left-right-ios7">
+      <ion-view title="Register">
+          
+              <ion-content padding="true" class="has-header">
+                  <form ng-controller="signUpController">
+                      <ion-list>
+                          <label class="item item-input">
+                              <span class="input-label">Name</span>
+                              <input type="text" placeholder="" ng-model="reg.name">
+                          </label>
+                          <label class="item item-input">
+                              <span class="input-label">Email</span>
+                              <input type="text" placeholder="" ng-model="reg.email">
+                          </label>
+                          <label class="item item-input">
+                              <span class="input-label">Password</span>
+                              <input type="password" placeholder="" ng-model="reg.pass">
+                          </label>
+                          <label class="item item-input">
+                              <span class="input-label">Confirm Password</span>
+                              <input type="password" placeholder="" ng-model="reg.cPass">
+                          </label>
+                      </ion-list>
+                      <div class="spacer" style="height: 40px;"></div>
+                      <button class="button button-stable button-block" ng-click="doRegister()">Register</button>
+                  </form>
+              </ion-content>
+</ion-view>
+</body>
+</html>

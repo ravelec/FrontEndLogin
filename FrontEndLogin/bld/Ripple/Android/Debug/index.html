@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Ionic Login Template</title>
+
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <style>
+            .angular-google-map-container {
+                width: 100%;
+                height: 504px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+        <link href="/lib/ionic.css" rel="stylesheet">
+        
+        <!-- ionic/angularjs js -->
+        <script src="/lib/ionic.bundle.js"></script>
+
+        <!-- satellizer -->
+        <script src="lib/satellizer.js"></script>
+
+        <!-- ui-router -->
+        <script src="lib/angular-ui-router.js"></script>
+
+        <script src="app.js"></script>
+
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js"></script>
+
+        <!-- your project references -->
+        <link href="css/index.css" rel="stylesheet" />
+
+    </head>
+
+    <body ng-app="app" animation="slide-left-right-ios7">
+        <script src="cordova.js"></script>
+        <script src="scripts/platformOverrides.js"></script>
+
+        <div>
+            <div>
+                <ion-nav-bar class="bar-stable">
+                    <ion-nav-back-button class="button-icon icon ion-ios7-arrow-back">Back</ion-nav-back-button>
+                </ion-nav-bar>
+                <ion-nav-view></ion-nav-view>
+            </div>
+        </div>
+        <script id="loginpage.html" type="text/ng-template">
+            <ion-view title="Login">
+                <ion-content padding="true" class="has-header">         
+                    <div class="list">
+                        <form ng-controller="loginController">
+                            <label class="item item-input">
+                                <span class="input-label">Username</span>
+                                <input type="text" placeholder="" data-ng-model="log.username">
+                            </label>
+                            <label class="item item-input">
+                                <span class="input-label">Password</span>
+                                <input type="password" placeholder="" data-ng-model="log.pass">
+                            </label>
+
+                            <div class="spacer" style="height: 40px;"></div>
+                            <button class="button button-stable button-block" ng-click="doLogin(log)">Log in</button>
+                        </form>
+                        
+                     </div>
+                    
+                    <a href="#/signup" class="button button-positive button-clear button-block">Or create an account</a>
+                    
+                </ion-content>
+                
+            </ion-view>
+        </script>
+    </body>
+</html>
