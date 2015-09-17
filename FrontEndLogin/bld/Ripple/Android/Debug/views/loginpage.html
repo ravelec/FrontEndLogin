@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body ng-app="app" animation="slide-left-right-ios7">
+    <ion-view title="Login">
+        <ion-content padding="true" class="has-header">
+            <div class="list">
+                <form ng-controller="loginController">
+                    <label class="item item-input">
+                        <span class="input-label">Username</span>
+                        <input type="text" placeholder="" data-ng-model="log.username">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Password</span>
+                        <input type="password" placeholder="" data-ng-model="log.pass">
+                    </label>
+
+                    <div class="spacer" style="height: 40px;"></div>
+                    <button class="button button-stable button-block" ng-click="doLogin(log)">Log in</button>
+                </form>
+
+            </div>
+
+            <a href="#/signup" class="button button-positive button-clear button-block">Or create an account</a>
+
+        </ion-content>
+    </ion-view>
+</body>
+</html>

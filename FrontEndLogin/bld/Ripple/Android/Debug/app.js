@@ -21,17 +21,17 @@ angular.module('app', ['ionic', 'app.controllers', 'satellizer', 'ui.router'])
 
       .state('loginState', {
           url: '/login',
-          templateUrl: 'loginpage.html',
+          templateUrl: 'views/loginpage.html',
           controller: 'loginController'
       })
         .state('signup', {
             url: '/signup',
-            templateUrl: 'signuppage.html',
+            templateUrl: 'views/signuppage.html',
             controller: 'signUpController'
         })
         .state('home', {
             url: '/home',
-            templateUrl: 'home.html',
+            templateUrl: 'views/home.html',
             controller: 'homeController'
         });
 
